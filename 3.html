@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>上网要饭</title>
+</head>
+<body>
+  <a href="2.html">版本二</a>
+    <a href="3.html">版本三</a>
+<center>
+
+  <h1>好人一生平安</h1>
+  <img src="static/picture/2.png">
+  <img src="static/picture/1.png">
+
+<br />
+ <h1>
+  在线要饭
+  </h1>
+  <a href="#" onclick="checkClickTime()">
+ 已给钱
+  </a>
+  
+  </center>
+<script>
+    function checkClickTime() {
+        var loadTime = new Date().getTime();
+        var clickTime = new Date().getTime();
+        var timeDiff = (clickTime - loadTime) / 1000; // Time difference in seconds
+
+        if (timeDiff < 2) {
+            alert("美好的事情已经发生");
+        } else {
+            alert("好运常相伴，幸福永相随。");
+        }
+    }
+ </script>
+</body>
+</html>
